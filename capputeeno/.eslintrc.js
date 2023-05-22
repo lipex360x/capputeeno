@@ -21,7 +21,7 @@ module.exports = {
     'import-helpers/order-imports': [
       'error',
       {
-        newlinesBetween: 'always',
+        newlinesBetween: 'never',
         groups: ['absolute', 'module', '/^@/', 'index'],
         alphabetize: { order: 'asc', ignoreCase: true },
       },
