@@ -1,7 +1,7 @@
 import type { PlopGeneratorConfig } from 'plop'
 
 export default <Partial<PlopGeneratorConfig>>{
-  description: 'Generate Migrations',
+  description: 'Generate Components',
 
   prompts: [
     {
