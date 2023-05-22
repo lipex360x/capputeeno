@@ -4,6 +4,6 @@ import components from './modules/components'
 import icons from './modules/icons'
 
 export default function (plop: NodePlopAPI) {
-  plop.setGenerator('components', components)
-  plop.setGenerator('icons', icons)
+  plop.setGenerator('component', components)
+  plop.setGenerator('icon', icons)
 }
