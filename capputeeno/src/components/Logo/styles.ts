@@ -10,11 +10,9 @@ const sairaStencil = Saira_Stencil_One({
 export const Wrapper = styled.a.attrs(() => ({
   className: sairaStencil.className,
 }))`
-  ${({ theme }) => css`
+  ${() => css`
     color: var(--logo-color);
     font-size: 40px;
     line-height: 150%;
-    font-family: ${sairaStencil.style};
-    color: ${theme.color.danger};
   `}
 `
