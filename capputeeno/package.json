@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pregenerate": "tsup --silent generators/plopfile.ts --format esm --outDir .plop && copyfiles -u 1 generators/**/*.hbs .plop",
+    "generate": "plop --plopfile .plop/plopfile.mjs"
   },
   "dependencies": {
     "@types/node": "20.2.3",
