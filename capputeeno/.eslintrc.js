@@ -17,11 +17,9 @@ module.exports = {
 
   rules: {
     'no-undef': 'off',
-    'no-useless-constructor': 'off',
     'import-helpers/order-imports': [
       'error',
       {
-        newlinesBetween: 'never',
         groups: ['absolute', 'module', '/^@/', 'index'],
         alphabetize: { order: 'asc', ignoreCase: true },
       },
