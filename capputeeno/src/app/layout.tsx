@@ -1,5 +1,4 @@
 'use client'
-import './globals.css'
 
 import { Saira } from 'next/font/google'
 import { ThemeProvider } from 'styled-components'

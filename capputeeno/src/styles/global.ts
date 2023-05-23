@@ -1,7 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-${({ theme }) => css`
+${() => css`
   * {
     box-sizing: border-box;
     padding: 0;
