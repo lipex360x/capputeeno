@@ -6,10 +6,11 @@ const defaultState = {
   type: FilterType.ALL,
   page: 0,
 
-  setType: (value: FilterType) => {},
+  setType: (type: FilterType) => {},
 }
 
 export const useFilter = create<typeof defaultState>((set) => ({
   ...defaultState,
-  setType: (value) => set(() => ({ type: value })),
+
+  setType: (type) => set(() => ({ type })),
 }))
