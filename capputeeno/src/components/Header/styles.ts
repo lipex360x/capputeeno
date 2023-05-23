@@ -5,7 +5,7 @@ export const Wrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 160px;
+    padding: 10px 0;
 
     > div {
       display: flex;
