@@ -13,4 +13,8 @@ ${() => css`
     max-width: 100vw;
     overflow-x: hidden;
   }
+
+  .html-main {
+    min-height: 100vh;
+  }
 `}`

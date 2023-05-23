@@ -2,7 +2,7 @@ import { FilterBar } from '@/components/FilterBar'
 
 export default function Home() {
   return (
-    <main>
+    <main className="html-main">
       <FilterBar />
     </main>
   )

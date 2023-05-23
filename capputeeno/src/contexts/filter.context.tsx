@@ -1,16 +1,20 @@
 import { create } from 'zustand'
-import { FilterType } from '@/enums'
+import { FilterTypes } from '@/enums'
+import { PriorityTypes } from '@/enums/priority.enum'
 
 const defaultState = {
   search: '',
-  type: FilterType.ALL,
+  type: FilterTypes.ALL,
+  priority: PriorityTypes.POPULARITY,
   page: 0,
 
-  setType: (type: FilterType) => {},
+  setType: (type: FilterTypes) => {},
+  setPriority: (priority: PriorityTypes) => {},
 }
 
 export const useFilter = create<typeof defaultState>((set) => ({
   ...defaultState,
 
   setType: (type) => set(() => ({ type })),
+  setPriority: (priority) => set(() => ({ priority })),
 }))
