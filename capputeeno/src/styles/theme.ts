@@ -3,5 +3,6 @@ export default {
     bgSecondary: '#f3f5f6',
 
     textDark: '#737380',
+    delete: '#DE3838',
   },
 }
