@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { FilterTypes, SortOptionProps } from '@/enums'
+import { FilterTypes, SortOptionProps } from '@/constants'
 
 const defaultState = {
   search: '',

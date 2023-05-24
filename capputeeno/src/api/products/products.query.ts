@@ -1,5 +1,5 @@
 import { ProductsFetchDto } from '@/dtos'
-import { FilterTypes, SortOptionProps } from '@/enums'
+import { FilterTypes, SortOptionProps } from '@/constants'
 import { client } from '../client'
 
 export const productQuery = async (

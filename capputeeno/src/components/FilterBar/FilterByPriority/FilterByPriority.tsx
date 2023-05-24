@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ArrowIcon } from '@/components/Icons'
 import { useFilter } from '@/contexts'
-import { PriorityTypes } from '@/enums/priority.enum'
+import { PriorityTypes } from '@/constants/priority.constant'
 import * as S from './styles'
 
 export const FilterByPriority = () => {

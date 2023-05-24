@@ -1,5 +1,5 @@
+import { FilterTypes } from '@/constants'
 import { useFilter } from '@/contexts'
-import { FilterTypes } from '@/enums'
 import * as S from './styles'
 
 export const FilterByType = () => {
@@ -14,8 +14,8 @@ export const FilterByType = () => {
         Todos os produtos
       </S.Item>
       <S.Item
-        selected={type === FilterTypes.SHIRT}
-        onClick={() => setType(FilterTypes.SHIRT)}
+        selected={type === FilterTypes.TSHIRT}
+        onClick={() => setType(FilterTypes.TSHIRT)}
       >
         camisetas
       </S.Item>
