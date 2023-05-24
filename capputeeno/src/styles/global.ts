@@ -14,8 +14,13 @@ ${({ theme }) => css`
     overflow-x: hidden;
   }
 
+  body {
+    min-width: 100vh;
+    font-family: ${theme.font.default};
+  }
+
   .html-main {
-    min-height: 100vh;
+    min-height: 1a00vh;
     background-color: ${theme.color.bgPrimary};
   }
 `}`
