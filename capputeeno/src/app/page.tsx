@@ -8,7 +8,7 @@ export default function Home() {
   const client = new QueryClient()
   return (
     <QueryClientProvider client={client}>
-      <main className="html-main">
+      <main>
         <FilterBar />
         <ProductList />
       </main>

@@ -6,6 +6,7 @@ export const Wrapper = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    background-color: white;
 
     > div {
       display: flex;
