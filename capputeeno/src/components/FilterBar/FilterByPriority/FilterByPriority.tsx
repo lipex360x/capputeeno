@@ -5,7 +5,7 @@ import { PriorityTypes } from '@/enums/priority.enum'
 import * as S from './styles'
 
 export const FilterByPriority = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const { setPriority } = useFilter()
 
   return (

@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
       flex: 1;
 
       font-family: inherit;
-      color: ${theme.color.textDark};
+      color: ${theme.color.textDarkLight};
     }
   `}
 `

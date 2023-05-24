@@ -1,6 +1,8 @@
 'use client'
 
 import { useProducts } from '@/hooks'
+import { Container } from '../Container'
+import { ProductItem } from './ProductItem'
 import * as S from './styles'
 
 export const ProductList = () => {
@@ -8,8 +10,12 @@ export const ProductList = () => {
   console.log(data)
 
   return (
-    <S.Wrapper>
-      <span>Hello ProductList</span>
-    </S.Wrapper>
+    <Container>
+      <S.Wrapper>
+        {data?.map((product) => (
+          <ProductItem key={product.id} {...product} />
+        ))}
+      </S.Wrapper>
+    </Container>
   )
 }

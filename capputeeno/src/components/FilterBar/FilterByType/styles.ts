@@ -30,7 +30,7 @@ export const Item = styled.li<ItemProps>`
     align-items: center;
     text-align: center;
 
-    color: ${theme.color.textDark};
+    color: ${theme.color.textDarkLight};
     list-style: none;
 
     ${selected && hasSelected(theme)}

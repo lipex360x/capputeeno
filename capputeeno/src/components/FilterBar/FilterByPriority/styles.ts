@@ -6,7 +6,7 @@ interface SearchFieldProps {
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    color: ${theme.color.textDark};
+    color: ${theme.color.textDarkLight};
     position: relative;
   `}
 `
@@ -18,7 +18,7 @@ export const SearchField = styled.button<SearchFieldProps>`
     justify-content: center;
     cursor: pointer;
     font-family: inherit;
-    color: ${theme.color.textDark};
+    color: ${theme.color.textDarkLight};
     border: none;
     background: none;
 
@@ -32,6 +32,7 @@ export const PriorityOptions = styled.ul`
   ${() => css`
     position: absolute;
     padding: 12px 16px;
+    z-index: 100;
 
     background: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);

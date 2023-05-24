@@ -1,7 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-${() => css`
+${({ theme }) => css`
   * {
     box-sizing: border-box;
     padding: 0;
@@ -16,5 +16,6 @@ ${() => css`
 
   .html-main {
     min-height: 100vh;
+    background-color: ${theme.color.bgPrimary};
   }
 `}`
