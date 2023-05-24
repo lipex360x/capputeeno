@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "pregenerate": "tsup --silent generators/plopfile.ts --format esm --outDir .plop && copyfiles -u 1 generators/**/*.hbs .plop",
-    "generate": "plop --plopfile .plop/plopfile.mjs"
+    "pregen": "tsup --silent generators/plopfile.ts --format esm --outDir .plop && copyfiles -u 1 generators/**/*.hbs .plop",
+    "gen": "plop --plopfile .plop/plopfile.mjs"
   },
   "dependencies": {
+    "@tanstack/react-query": "4.29.7",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "axios": "1.4.0",
     "eslint": "^8.0.1",
     "eslint-config-next": "13.4.3",
     "next": "13.4.3",
@@ -21,6 +23,7 @@
     "react-dom": "18.2.0",
     "styled-components": "6.0.0-rc.1",
     "typescript": "*",
+    "zod": "3.21.4",
     "zustand": "4.3.8"
   },
   "devDependencies": {
