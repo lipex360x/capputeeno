@@ -7,7 +7,6 @@ import * as S from './styles'
 
 export const ProductList = () => {
   const { data } = useProducts()
-  console.log(data)
 
   return (
     <Container>

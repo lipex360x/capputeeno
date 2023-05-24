@@ -2,10 +2,11 @@ import { create } from 'zustand'
 import { FilterTypes, SortOptionProps } from '@/enums'
 
 const defaultState = {
+  search: '',
   type: FilterTypes.ALL,
   priority: { sortField: 'created_at', sortOrder: 'DESC' },
-  page: 0,
 
+  setSearch: (search: string) => {},
   setType: (type: FilterTypes) => {},
   setPriority: (priority: SortOptionProps) => {},
 }
@@ -13,6 +14,7 @@ const defaultState = {
 export const useFilter = create<typeof defaultState>((set) => ({
   ...defaultState,
 
+  setSearch: (search) => set(() => ({ search })),
   setType: (type) => set(() => ({ type })),
   setPriority: (priority) => set(() => ({ priority })),
 }))
