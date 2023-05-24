@@ -1,3 +1,5 @@
+import '@fontsource/saira-stencil-one'
+
 export default {
   grid: {
     container: '1152px',
@@ -17,5 +19,9 @@ export default {
 
     delete: '#DE3838',
     orangeLow: '#ffa585',
+  },
+
+  font: {
+    logo: ['Saira Stencil One', 'sans-serif'].join(','),
   },
 }

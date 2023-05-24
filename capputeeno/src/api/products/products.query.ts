@@ -1,17 +1,20 @@
 import { ProductsFetchDto } from '@/dtos'
-import { FilterTypes } from '@/enums'
+import { FilterTypes, SortOptionProps } from '@/enums'
 import { client } from '../client'
 
-export const getProducts = async (
+export const productQuery = async (
   type: FilterTypes,
+  priority: SortOptionProps,
 ): Promise<ProductsFetchDto> => {
   const fragment = `
     fragment productDetail on Product {
-      id
-      name
-      price_in_cents
-      image_url
-      category
+      id,
+      created_at,
+      name,
+      price_in_cents,
+      image_url,
+      category,
+      sales,
     }
   `
 
@@ -19,7 +22,7 @@ export const getProducts = async (
     fragment +
     `
       query ALLPRODUCTS {
-        allProducts {
+        allProducts(sortField: "${priority.sortField}", sortOrder:"${priority.sortOrder}") {
           ...productDetail
         }
       }
@@ -29,7 +32,7 @@ export const getProducts = async (
     fragment +
     `
     query PRODUCT_BY_CATEGORY {
-      allProducts(filter: {category: "${type}"}) {
+      allProducts(filter: {category: "${type}"}, sortField: "${priority.sortField}", sortOrder:"${priority.sortOrder}") {
         ...productDetail
       }
     }
