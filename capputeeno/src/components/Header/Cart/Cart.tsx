@@ -1,5 +1,5 @@
 import { useLocalStorage } from '@/hooks'
-import { CartIcon } from '../Icons'
+import { CartIcon } from '../../Icons'
 import { Count } from './Count'
 import * as S from './styles'
 

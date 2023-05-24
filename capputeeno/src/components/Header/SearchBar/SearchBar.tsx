@@ -1,4 +1,4 @@
-import { SearchIcon } from '../Icons'
+import { SearchIcon } from '../../Icons'
 import * as S from './styles'
 
 export const SearchBar = () => {
