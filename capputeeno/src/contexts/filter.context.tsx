@@ -1,13 +1,13 @@
 import { create } from 'zustand'
-import { FilterTypes, SortOptionProps } from '@/constants'
+import { FilterTypes, SortOptionProps, PriorityTypes } from '@/constants'
 
 const defaultState = {
   search: '',
   type: FilterTypes.ALL,
-  priority: { sortField: 'created_at', sortOrder: 'DESC' },
+  priority: PriorityTypes.NEWS,
 
   setSearch: (search: string) => {},
-  setType: (type: FilterTypes) => {},
+  setType: (type: string) => {},
   setPriority: (priority: SortOptionProps) => {},
 }
 
